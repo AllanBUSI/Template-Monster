@@ -1,9 +1,9 @@
 {
-    "name": "test",
+    "name": "monsterplay",
     "title": "MonsterPlay",
     "version": "1.0.4",
     "description": "eSports and Gaming HTML Template",
-    "author": "Allan BUSI",
+    "author": "nK",
     "website": "https://nkdev.info/",
     "purchase": "https://themeforest.net/user/_nk/portfolio",
     "support": "https://nk.ticksy.com/",
@@ -41,7 +41,8 @@
             "keepalive": true,
             "stdio": "ignore"
         },
-        "static": [{
+        "static": [
+            {
                 "from": "{src}/static/**",
                 "to": "{dist}"
             },
@@ -108,7 +109,8 @@
             "from": "{src}/images/**/*.{jpg,jpeg,png,gif,svg}",
             "to": "{dist}/assets/images"
         },
-        "watch": [{
+        "watch": [
+            {
                 "task": "static",
                 "from": "{src}/static/**/*"
             },
@@ -142,7 +144,8 @@
                 "from": "{deploy}/{template_name}",
                 "to": "{deploy}/{template_name}.zip"
             },
-            "static": [{
+            "static": [
+                {
                     "from": [
                         "{src}/*README.html"
                     ],
